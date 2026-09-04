@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ecommerce-platform",
+    "order": 1,
+    "title": "E-Commerce Platform",
+    "description": "Full-stack e-commerce solution with modern UI/UX",
+    "tag": "React + Node",
+    "gradient": "from-fuchsia-500/30 via-purple-600/20 to-indigo-900/40",
+    "href": "#"
+  },
+  {
+    "id": "task-management-app",
+    "order": 2,
+    "title": "Task Management App",
+    "description": "Collaborative task management application",
+    "tag": "Next.js",
+    "gradient": "from-indigo-400/20 via-violet-500/15 to-slate-200/10",
+    "href": "#"
+  },
+  {
+    "id": "crypto-dashboard",
+    "order": 3,
+    "title": "Crypto Dashboard",
+    "description": "Real-time cryptocurrency tracking dashboard",
+    "tag": "TypeScript",
+    "gradient": "from-emerald-500/20 via-teal-600/15 to-slate-900/40",
+    "href": "#"
+  }
+]

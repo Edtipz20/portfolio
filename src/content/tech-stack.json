@@ -1,0 +1,11 @@
+[
+  { "id": "html5", "icon": "html5" },
+  { "id": "css3", "icon": "css3" },
+  { "id": "javascript", "icon": "javascript" },
+  { "id": "typescript", "icon": "typescript" },
+  { "id": "react", "icon": "react" },
+  { "id": "prisma", "icon": "prisma" },
+  { "id": "postgresql", "icon": "postgresql" },
+  { "id": "next", "icon": "next" },
+  { "id": "tailwind", "icon": "tailwind" }
+]

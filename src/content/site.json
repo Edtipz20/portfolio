@@ -1,0 +1,62 @@
+{
+  "brand": {
+    "name": "ETJ",
+    "logoInitial": "</>"
+  },
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "About", "href": "#about" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "eyebrow": "I'm a Web Developer",
+    "firstName": "Eduard",
+    "headline": "I build things for the web.",
+    "description": "I'm a passionate web developer specializing in building exceptional digital experiences with modern technologies.",
+    "primaryCta": { "label": "View My Work", "href": "#projects" },
+    "secondaryCta": {
+      "label": "Download CV",
+      "href": "/cv/alex-developer-cv.pdf"
+    },
+    "techNote": "Technologies I work with",
+    "codeSnippet": {
+      "title": "Code",
+      "lines": [
+        "const developer = {",
+        "  name: \"Eduard\",",
+        "  skills: [\"HTML\", \"CSS\",",
+        "    \"JavaScript\", \"React\",",
+        "     \"NextJS\"],",
+        "  passion: \"Building things",
+        "    for the web\"",
+        "};"
+      ]
+    }
+  },
+  "about": {
+    "eyebrow": "About Me",
+    "heading": "I'm passionate about creating digital solutions",
+    "description": "With 2+ years of experience in web development, I help businesses and individuals bring their ideas to life through clean, efficient, and user-friendly code.",
+    "cta": { "label": "Learn More About Me", "href": "#contact" }
+  },
+  "contact": {
+    "eyebrow": "Let's Work Together",
+    "heading": "Have a project in mind?",
+    "description": "I'm always open to discussing new projects and opportunities. Let's create something amazing together!",
+    "cta": { "label": "Get In Touch", "href": "mailto:hello@alexdev.com" },
+    "email": "hello@alexdev.com",
+    "phone": "+1 (555) 123-4567"
+  },
+  "social": [
+    { "platform": "github", "href": "https://github.com" },
+    { "platform": "linkedin", "href": "https://linkedin.com" },
+    { "platform": "twitter", "href": "https://twitter.com" },
+    { "platform": "instagram", "href": "https://instagram.com" }
+  ],
+  "footer": {
+    "copyright": "© {year} Alex Developer. All rights reserved.",
+    "signature": "Made with love by Alex"
+  }
+}

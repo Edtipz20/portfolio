@@ -1,0 +1,26 @@
+[
+  {
+    "id": "experience",
+    "icon": "CalendarDays",
+    "value": "2+",
+    "label": "Years Experience"
+  },
+  {
+    "id": "projects",
+    "icon": "CodeXml",
+    "value": "3",
+    "label": "Projects Completed"
+  },
+  {
+    "id": "clients",
+    "icon": "Smile",
+    "value": "1",
+    "label": "Happy Clients"
+  },
+  {
+    "id": "satisfaction",
+    "icon": "Trophy",
+    "value": "100%",
+    "label": "Client Satisfaction"
+  }
+]
