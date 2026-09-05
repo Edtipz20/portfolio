@@ -46,17 +46,16 @@
     "heading": "Have a project in mind?",
     "description": "I'm always open to discussing new projects and opportunities. Let's create something amazing together!",
     "cta": { "label": "Get In Touch", "href": "mailto:hello@alexdev.com" },
-    "email": "hello@alexdev.com",
-    "phone": "+1 (555) 123-4567"
+    "email": "eduardo.tipoh@gmail.com",
+    "phone": "(+63) 935-674-4073"
   },
   "social": [
-    { "platform": "github", "href": "https://github.com" },
-    { "platform": "linkedin", "href": "https://linkedin.com" },
-    { "platform": "twitter", "href": "https://twitter.com" },
-    { "platform": "instagram", "href": "https://instagram.com" }
+    { "platform": "github", "href": "https://github.com/Edtipz20" },
+    { "platform": "linkedin", "href": "https://linkedin.com/in/eduard-tipoh" },
+    { "platform": "facebook", "href": "https://www.facebook.com/eduard.tipoh" }
   ],
   "footer": {
-    "copyright": "© {year} Alex Developer. All rights reserved.",
-    "signature": "Made with love by Alex"
+    "copyright": "© {year} ETJ. All rights reserved.",
+    "signature": "Made with love by Eduard"
   }
 }

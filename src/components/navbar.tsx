@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { CodeXml, ArrowUpRight, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { CodeXml, Menu, X } from "lucide-react";
+import { ContactFormDialog } from "@/components/contact-form-dialog";
 import type { SiteContent } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -79,12 +79,7 @@ export function Navbar({ site }: { site: SiteContent }) {
         </ul>
 
         <div className="hidden md:block">
-          <Button asChild size="sm">
-            <a href={site.contact.cta.href}>
-              Hire Me
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
-          </Button>
+          <ContactFormDialog recipient={site.contact.email} />
         </div>
 
         <button
@@ -111,12 +106,11 @@ export function Navbar({ site }: { site: SiteContent }) {
               </li>
             ))}
           </ul>
-          <Button asChild size="sm" className="mt-5 w-full">
-            <a href={site.contact.cta.href}>
-              Hire Me
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
-          </Button>
+          <ContactFormDialog
+            recipient={site.contact.email}
+            className="mt-5"
+            fullWidth
+          />
         </div>
       )}
     </header>

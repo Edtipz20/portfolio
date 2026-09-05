@@ -11,19 +11,18 @@ const ICONS: Record<string, React.ReactNode> = {
       <circle cx="4" cy="4" r="2" />
     </>
   ),
-  twitter: (
-    <path d="M22 4.01c-.9.4-1.8.7-2.8.9 1-.6 1.8-1.6 2.2-2.7-.9.6-2 1-3.1 1.2A4.8 4.8 0 0 0 16.4 2c-2.7 0-4.8 2.2-4.8 4.8 0 .4 0 .7.1 1.1-4-.2-7.6-2.1-10-5-.4.7-.6 1.6-.6 2.5 0 1.6.8 3.1 2.1 3.9-.8 0-1.5-.2-2.1-.6v.1c0 2.3 1.6 4.3 3.8 4.7-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.4 3.3 4.5 3.3A9.6 9.6 0 0 1 0 19.5 13.5 13.5 0 0 0 7.3 21.6c8.8 0 13.6-7.3 13.6-13.6v-.6c.9-.7 1.7-1.5 2.3-2.5-.9.4-1.8.6-2.8.7Z" />
-  ),
-  instagram: (
-    <>
-      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-      <path d="M16 11.4a4 4 0 1 1-3.4-3.4 4 4 0 0 1 3.4 3.4Z" />
-      <path d="M17.5 6.5h.01" />
-    </>
+  facebook: (
+    <path d="M13.5 22v-8h2.8l.4-3.1h-3.2V8.9c0-.9.3-1.5 1.6-1.5h1.7V4.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V14h2.8v8h3.2Z" />
   ),
 };
 
-export function SocialIcon({ platform, className }: { platform: string; className?: string }) {
+export function SocialIcon({
+  platform,
+  className,
+}: {
+  platform: string;
+  className?: string;
+}) {
   const icon = ICONS[platform];
   if (!icon) return null;
   return (

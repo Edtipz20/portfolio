@@ -1,5 +1,5 @@
-import { ArrowUpRight, Mail, Phone, Quote } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Mail, Phone, Quote } from "lucide-react";
+import { ContactFormDialog } from "@/components/contact-form-dialog";
 import { SocialIcon } from "@/components/social-icon";
 import type { SiteContent, Testimonial } from "@/lib/content";
 
@@ -26,12 +26,11 @@ export function ContactSection({
           <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-white/60">
             {contact.description}
           </p>
-          <Button asChild className="mt-7">
-            <a href={contact.cta.href}>
-              {contact.cta.label}
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
-          </Button>
+          <ContactFormDialog
+            recipient={contact.email}
+            label={contact.cta.label}
+            className="mt-7"
+          />
         </div>
 
         {/* Testimonial */}
