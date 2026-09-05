@@ -21,7 +21,7 @@ export function SkillsSection({ skills }: { skills: Skill[] }) {
                 <div className="flex items-center gap-3">
                   <TechIcon
                     id={skill.icon}
-                    wrapperClassName="h-8 w-8"
+                    wrapperClassName="h-8 w-8 rounded-full"
                     className="h-4 w-4 text-white"
                   />
                   <span className="text-sm font-semibold text-white">

@@ -23,7 +23,7 @@ export function Hero({
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 py-20 lg:grid-cols-2 lg:gap-4 lg:px-10 lg:py-28">
         {/* Left column */}
         <div>
-          <span className="inline-flex items-center rounded-md border border-violet-400/25 bg-violet-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-violet-300">
+          <span className="inline-flex items-center rounded-sm border border-violet-400/25 bg-violet-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white">
             {hero.eyebrow}
           </span>
 
@@ -61,7 +61,7 @@ export function Hero({
                 <TechIcon
                   key={tech.id}
                   id={tech.icon}
-                  wrapperClassName="h-11 w-11 border border-white/10"
+                  wrapperClassName="h-11 w-11 border rounded-sm border-white/10"
                   className="h-5.5 w-5.5 text-white"
                 />
               ))}

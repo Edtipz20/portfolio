@@ -25,7 +25,7 @@ export async function ProjectsSection() {
             <a
               key={project.id}
               href={`/projects/${project.id}`}
-              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/2 transition-all duration-300 hover:-translate-y-1.5 hover:border-violet-400/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.45)]"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/2 transition-all duration-300 hover:-translate-y-1.5 hover:border-violet-400/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.45)]"
             >
               <div
                 className={cn(
@@ -47,15 +47,15 @@ export async function ProjectsSection() {
                 </span>
               </div>
 
-              <div className="p-6">
+              <div className="flex flex-1 flex-col p-6">
                 <h3 className="font-display text-lg font-semibold text-white">
                   {project.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/55">
                   {project.description}
                 </p>
-                <div className="text-right">
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
+                <div className="mt-auto text-right">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
                     View Project
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </span>
