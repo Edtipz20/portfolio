@@ -16,12 +16,16 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Alex — Web Developer Portfolio",
+  title: "Eduard — Web Developer Portfolio",
   description:
-    "Alex is a web developer specializing in building exceptional digital experiences with modern technologies like React, Next.js and Node.js.",
+    "Eduard is a web developer specializing in building exceptional digital experiences with modern technologies like React, Next.js, Tailwind and Prisma.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${inter.variable} ${sora.variable} h-full`}>
       <body className="min-h-full bg-background text-foreground antialiased selection:bg-violet-500/30">
