@@ -1,7 +1,7 @@
 [
   { "id": "html", "name": "HTML", "level": 95, "icon": "html5" },
   { "id": "react", "name": "React.js", "level": 85, "icon": "react" },
-  { "id": "postgres", "name": "Postgresql", "level": 80, "icon": "postgresql" },
+  { "id": "postgres", "name": "Postgresql", "level": 75, "icon": "postgresql" },
   { "id": "css", "name": "CSS", "level": 90, "icon": "css3" },
   { "id": "next", "name": "Next.js", "level": 80, "icon": "next" },
   { "id": "tailwind", "name": "Tailwind CSS", "level": 90, "icon": "tailwind" },

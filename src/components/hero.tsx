@@ -44,12 +44,12 @@ export function Hero({
                 <ArrowUpRight className="h-4 w-4" />
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            {/* <Button asChild variant="outline" size="lg">
               <a href={hero.secondaryCta.href} download>
                 {hero.secondaryCta.label}
                 <Download className="h-4 w-4" />
               </a>
-            </Button>
+            </Button> */}
           </div>
 
           <div className="mt-14">
