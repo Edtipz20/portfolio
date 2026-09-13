@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { getProject } from "@/lib/actions/project.action";
 import { ProjectGallery } from "@/components/project-gallery";
+import { splitTags } from "@/lib/utils";
 
 export default async function ProjectDetailPage({
   params,
@@ -24,17 +25,24 @@ export default async function ProjectDetailPage({
           className="inline-flex items-center gap-1.5 text-sm font-medium text-white/50 transition-colors hover:text-white"
         >
           <ArrowLeft className="h-4 w-4" />
-          Back to projects
+          Back
         </Link>
 
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-wider text-violet-400">
-              {project.tag}
-            </span>
             <h1 className="mt-2 font-display text-3xl font-bold text-white sm:text-4xl">
               {project.title}
             </h1>
+            <div className="relative z-10 flex flex-wrap justify-start gap-1.5 mt-2">
+              {splitTags(project.tag).map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full bg-white/10 px-2.5 py-1 text-[11px] font-medium text-white/80 backdrop-blur"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
           </div>
 
           {hasExternalLink && (
@@ -58,9 +66,12 @@ export default async function ProjectDetailPage({
           />
         </div>
 
-        <p className="mt-10 max-w-2xl text-[15px] leading-relaxed text-white/60">
-          {project.description}
-        </p>
+        <div className="mt-10 flex flex-col gap-3">
+          <h1 className="font-bold text-2xl">Description</h1>
+          <p className="w-full text-[15px] leading-relaxed text-white/60">
+            {project.description}
+          </p>
+        </div>
       </div>
     </main>
   );

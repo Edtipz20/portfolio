@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, splitTags } from "@/lib/utils";
 import { getProjects } from "@/lib/actions/project.action";
 import Image from "next/image";
 
@@ -27,12 +27,7 @@ export async function ProjectsSection() {
               href={`/projects/${project.id}`}
               className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/2 transition-all duration-300 hover:-translate-y-1.5 hover:border-violet-400/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.45)]"
             >
-              <div
-                className={cn(
-                  "relative flex aspect-4/3 items-start justify-between overflow-hidden bg-linear-to-br p-4",
-                  project.gradient,
-                )}
-              >
+              <div className="relative flex aspect-4/3 items-start justify-between overflow-hidden bg-linear-to-br p-4">
                 {project.images[0] && (
                   <Image
                     src={project.images[0]}
@@ -42,18 +37,22 @@ export async function ProjectsSection() {
                     sizes="(min-width: 768px) 33vw, 100vw"
                   />
                 )}
-                <span className="rounded-md bg-black/40 px-2.5 py-1 text-xs font-semibold text-white backdrop-blur">
-                  {String(project.order).padStart(2, "0")}
-                </span>
               </div>
 
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="font-display text-lg font-semibold text-white">
                   {project.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/55">
-                  {project.description}
-                </p>
+                <div className="relative z-10 flex flex-wrap justify-start gap-1.5 my-2">
+                  {splitTags(project.tag).map((t) => (
+                    <span
+                      key={t}
+                      className="rounded-full bg-white/10 px-2.5 py-1 text-[11px] font-medium text-white/80 backdrop-blur"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
                 <div className="mt-auto text-right">
                   <span className="inline-flex items-center gap-1.5 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
                     View Project
