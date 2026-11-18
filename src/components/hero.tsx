@@ -112,7 +112,7 @@ export function Hero({
             </svg>
           </div>
 
-          <div className="absolute hidden sm:block -right-6 bottom-8 w-56 rounded-xl border border-white/10 bg-surface/95 p-4 font-mono text-[11px] shadow-2xl shadow-black/50 backdrop-blur sm:-right-18">
+          {/* <div className="absolute hidden sm:block -right-6 bottom-8 w-56 rounded-xl border border-white/10 bg-surface/95 p-4 font-mono text-[11px] shadow-2xl shadow-black/50 backdrop-blur sm:-right-18">
             <div className="mb-3 flex items-center justify-between border-b border-white/10 pb-2">
               <span className="flex items-center gap-1.5 text-white/50">
                 <span className="text-violet-400">{"</>"}</span>{" "}
@@ -129,7 +129,7 @@ export function Hero({
                 ))}
               </code>
             </pre>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
