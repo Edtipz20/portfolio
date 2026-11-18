@@ -11,9 +11,9 @@
     { "label": "Contact", "href": "#contact" }
   ],
   "hero": {
-    "eyebrow": "I'm a Web Developer",
+    "eyebrow": "I'm a Developer",
     "firstName": "Eduard",
-    "headline": "I build things for the web.",
+    "headline": "I'm a GHL Specialist and a Web Developer",
     "description": "I'm a passionate web developer specializing in building exceptional digital experiences with modern technologies.",
     "primaryCta": { "label": "View My Work", "href": "#projects" },
     "secondaryCta": {
@@ -38,7 +38,7 @@
   "about": {
     "eyebrow": "About Me",
     "heading": "I'm passionate about creating digital solutions",
-    "description": "With 2+ years of experience in web development, I help businesses and individuals bring their ideas to life through clean, efficient, and user-friendly code.",
+    "description": "With 2+ years of experience in web development and creating funnels and automations, I help businesses and individuals bring their ideas to life through clean, efficient, and user-friendly code.",
     "cta": { "label": "Learn More About Me", "href": "#contact" }
   },
   "contact": {

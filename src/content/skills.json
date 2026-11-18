@@ -1,21 +1,15 @@
 [
-  { "id": "html", "name": "HTML", "level": 95, "icon": "html5" },
   { "id": "react", "name": "React.js", "level": 85, "icon": "react" },
-  { "id": "postgres", "name": "Postgresql", "level": 75, "icon": "postgresql" },
-  { "id": "css", "name": "CSS", "level": 90, "icon": "css3" },
+  { "id": "gohighlevel", "name": "GoHighLevel", "level": 90, "icon": "gohighlevel" },
+  { "id": "zapier", "name": "Zapier", "level": 90, "icon": "zapier" },
+  { "id": "webhooks", "name": "Webhooks", "level": 90, "icon": "webhooks" },
+  { "id": "make", "name": "Make.com", "level": 90, "icon": "make" },
   { "id": "next", "name": "Next.js", "level": 80, "icon": "next" },
   { "id": "tailwind", "name": "Tailwind CSS", "level": 90, "icon": "tailwind" },
-  {
-    "id": "javascript",
-    "name": "JavaScript",
-    "level": 90,
-    "icon": "javascript"
-  },
   {
     "id": "typescript",
     "name": "TypeScript",
     "level": 85,
     "icon": "typescript"
-  },
-  { "id": "prisma", "name": "Prisma", "level": 85, "icon": "prisma" }
+  }
 ]
